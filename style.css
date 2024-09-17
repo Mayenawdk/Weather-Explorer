@@ -1,0 +1,123 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Container for the entire dashboard */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Search section styling */
+#dashboard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Search and history on the left side */
+#search-section {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#city-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #45a049;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#history-list li {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#history-list li:hover {
+    background-color: #d0d0d0;
+}
+
+/* Weather display on the right side */
+#weather-display {
+    width: 70%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#current-weather h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Forecast container styling */
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.forecast-container div {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 6px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-container div h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Adjusting for mobile responsiveness */
+@media (max-width: 768px) {
+    #dashboard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search-section, #weather-display {
+        width: 100%;
+    }
+
+    .forecast-container {
+        flex-wrap: wrap;
+    }
+}
